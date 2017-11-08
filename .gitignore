@@ -82,5 +82,9 @@ target/
 # pycharm files
 .idea/
 
+# eclipse
+.classpath
+.project
+
 .DS_Store
 /bin/

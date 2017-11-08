@@ -87,4 +87,4 @@ target/
 .project
 
 .DS_Store
-/bin/
+#/bin/

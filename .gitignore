@@ -89,3 +89,4 @@ target/
 .DS_Store
 #/bin/
 spark-warehouse/
+spark.log

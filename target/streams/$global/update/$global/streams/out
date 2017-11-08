@@ -1,4 +1,4 @@
-[0m[[0minfo[0m] [0mUpdating {file:/home/hadi/Dropbox/DeepLearning/Lab1/}lab1...[0m
+[0m[[0minfo[0m] [0mUpdating {file:/home/hadi/Personal/University/EIT/2stYear/Q2/Scalable%20Machine%20Learning/Labs/DistributedLinearRegression/}distributedlinearregression...[0m
 [0m[[0mdebug[0m] [0m:: resolving dependencies :: se.kth.spark#lab1_2.11;1.0[0m
 [0m[[0mdebug[0m] [0m	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool][0m
 [0m[[0mdebug[0m] [0m	validate = true[0m
@@ -160,7 +160,7 @@
 [0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-core_2.11/2.0.1/spark-core_2.11-2.0.1.pom[0m
 [0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-core_2.11/2.0.1/spark-core_2.11-2.0.1.pom.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/org/apache/spark/spark-core_2.11/2.0.1/spark-core_2.11-2.0.1.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.apache.spark#spark-core_2.11;2.0.1!spark-core_2.11.pom(pom.original) (264ms)[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.apache.spark#spark-core_2.11;2.0.1!spark-core_2.11.pom(pom.original) (176ms)[0m
 [0m[[0minfo[0m] [0mResolving org.apache.spark#spark-parent_2.11;2.0.1 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.apache.spark#spark-parent_2.11;2.0.1 {}[0m
 [0m[[0minfo[0m] [0mResolving org.apache.spark#spark-parent_2.11;2.0.1 ...[0m
@@ -174,7 +174,7 @@
 [0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-parent_2.11/2.0.1/spark-parent_2.11-2.0.1.pom[0m
 [0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-parent_2.11/2.0.1/spark-parent_2.11-2.0.1.pom.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/org/apache/spark/spark-parent_2.11/2.0.1/spark-parent_2.11-2.0.1.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.apache.spark#spark-parent_2.11;2.0.1!spark-parent_2.11.pom(pom.original) (337ms)[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.apache.spark#spark-parent_2.11;2.0.1!spark-parent_2.11.pom(pom.original) (211ms)[0m
 [0m[[0minfo[0m] [0mResolving org.apache#apache;14 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.apache#apache;14 {}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.apache#apache;14[0m
@@ -2450,7 +2450,7 @@
 [0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-launcher_2.11/2.0.1/spark-launcher_2.11-2.0.1.pom[0m
 [0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-launcher_2.11/2.0.1/spark-launcher_2.11-2.0.1.pom.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/org/apache/spark/spark-launcher_2.11/2.0.1/spark-launcher_2.11-2.0.1.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.apache.spark#spark-launcher_2.11;2.0.1!spark-launcher_2.11.pom(pom.original) (163ms)[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.apache.spark#spark-launcher_2.11;2.0.1!spark-launcher_2.11.pom(pom.original) (34ms)[0m
 [0m[[0minfo[0m] [0mResolving org.apache.spark#spark-parent_2.11;2.0.1 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.apache.spark#spark-parent_2.11;2.0.1 {}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.apache.spark#spark-parent_2.11;2.0.1[0m
@@ -2477,7 +2477,7 @@
 [0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-tags_2.11/2.0.1/spark-tags_2.11-2.0.1.pom[0m
 [0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-tags_2.11/2.0.1/spark-tags_2.11-2.0.1.pom.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/org/apache/spark/spark-tags_2.11/2.0.1/spark-tags_2.11-2.0.1.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.apache.spark#spark-tags_2.11;2.0.1!spark-tags_2.11.pom(pom.original) (166ms)[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.apache.spark#spark-tags_2.11;2.0.1!spark-tags_2.11.pom(pom.original) (95ms)[0m
 [0m[[0minfo[0m] [0mResolving org.apache.spark#spark-parent_2.11;2.0.1 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.apache.spark#spark-parent_2.11;2.0.1 {}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.apache.spark#spark-parent_2.11;2.0.1[0m
@@ -2655,7 +2655,7 @@
 [0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-network-common_2.11/2.0.1/spark-network-common_2.11-2.0.1.pom[0m
 [0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-network-common_2.11/2.0.1/spark-network-common_2.11-2.0.1.pom.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/org/apache/spark/spark-network-common_2.11/2.0.1/spark-network-common_2.11-2.0.1.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.apache.spark#spark-network-common_2.11;2.0.1!spark-network-common_2.11.pom(pom.original) (170ms)[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.apache.spark#spark-network-common_2.11;2.0.1!spark-network-common_2.11.pom(pom.original) (38ms)[0m
 [0m[[0minfo[0m] [0mResolving org.apache.spark#spark-parent_2.11;2.0.1 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.apache.spark#spark-parent_2.11;2.0.1 {}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.apache.spark#spark-parent_2.11;2.0.1[0m
@@ -2780,7 +2780,7 @@
 [0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-network-shuffle_2.11/2.0.1/spark-network-shuffle_2.11-2.0.1.pom[0m
 [0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-network-shuffle_2.11/2.0.1/spark-network-shuffle_2.11-2.0.1.pom.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/org/apache/spark/spark-network-shuffle_2.11/2.0.1/spark-network-shuffle_2.11-2.0.1.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.apache.spark#spark-network-shuffle_2.11;2.0.1!spark-network-shuffle_2.11.pom(pom.original) (166ms)[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.apache.spark#spark-network-shuffle_2.11;2.0.1!spark-network-shuffle_2.11.pom(pom.original) (36ms)[0m
 [0m[[0minfo[0m] [0mResolving org.apache.spark#spark-parent_2.11;2.0.1 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.apache.spark#spark-parent_2.11;2.0.1 {}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.apache.spark#spark-parent_2.11;2.0.1[0m
@@ -2821,7 +2821,7 @@
 [0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-unsafe_2.11/2.0.1/spark-unsafe_2.11-2.0.1.pom[0m
 [0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-unsafe_2.11/2.0.1/spark-unsafe_2.11-2.0.1.pom.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/org/apache/spark/spark-unsafe_2.11/2.0.1/spark-unsafe_2.11-2.0.1.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.apache.spark#spark-unsafe_2.11;2.0.1!spark-unsafe_2.11.pom(pom.original) (166ms)[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.apache.spark#spark-unsafe_2.11;2.0.1!spark-unsafe_2.11.pom(pom.original) (30ms)[0m
 [0m[[0minfo[0m] [0mResolving org.apache.spark#spark-parent_2.11;2.0.1 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.apache.spark#spark-parent_2.11;2.0.1 {}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.apache.spark#spark-parent_2.11;2.0.1[0m
@@ -4353,7 +4353,7 @@
 [0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-sql_2.11/2.0.1/spark-sql_2.11-2.0.1.pom[0m
 [0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-sql_2.11/2.0.1/spark-sql_2.11-2.0.1.pom.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/org/apache/spark/spark-sql_2.11/2.0.1/spark-sql_2.11-2.0.1.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.apache.spark#spark-sql_2.11;2.0.1!spark-sql_2.11.pom(pom.original) (162ms)[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.apache.spark#spark-sql_2.11;2.0.1!spark-sql_2.11.pom(pom.original) (40ms)[0m
 [0m[[0minfo[0m] [0mResolving org.apache.spark#spark-parent_2.11;2.0.1 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.apache.spark#spark-parent_2.11;2.0.1 {}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.apache.spark#spark-parent_2.11;2.0.1[0m
@@ -4386,7 +4386,7 @@
 [0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-sketch_2.11/2.0.1/spark-sketch_2.11-2.0.1.pom[0m
 [0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-sketch_2.11/2.0.1/spark-sketch_2.11-2.0.1.pom.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/org/apache/spark/spark-sketch_2.11/2.0.1/spark-sketch_2.11-2.0.1.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.apache.spark#spark-sketch_2.11;2.0.1!spark-sketch_2.11.pom(pom.original) (181ms)[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.apache.spark#spark-sketch_2.11;2.0.1!spark-sketch_2.11.pom(pom.original) (58ms)[0m
 [0m[[0minfo[0m] [0mResolving org.apache.spark#spark-parent_2.11;2.0.1 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.apache.spark#spark-parent_2.11;2.0.1 {}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.apache.spark#spark-parent_2.11;2.0.1[0m
@@ -4422,7 +4422,7 @@
 [0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-catalyst_2.11/2.0.1/spark-catalyst_2.11-2.0.1.pom[0m
 [0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-catalyst_2.11/2.0.1/spark-catalyst_2.11-2.0.1.pom.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/org/apache/spark/spark-catalyst_2.11/2.0.1/spark-catalyst_2.11-2.0.1.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.apache.spark#spark-catalyst_2.11;2.0.1!spark-catalyst_2.11.pom(pom.original) (166ms)[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.apache.spark#spark-catalyst_2.11;2.0.1!spark-catalyst_2.11.pom(pom.original) (33ms)[0m
 [0m[[0minfo[0m] [0mResolving org.apache.spark#spark-parent_2.11;2.0.1 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.apache.spark#spark-parent_2.11;2.0.1 {}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.apache.spark#spark-parent_2.11;2.0.1[0m
@@ -4696,7 +4696,7 @@
 [0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-mllib_2.11/2.0.1/spark-mllib_2.11-2.0.1.pom[0m
 [0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-mllib_2.11/2.0.1/spark-mllib_2.11-2.0.1.pom.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/org/apache/spark/spark-mllib_2.11/2.0.1/spark-mllib_2.11-2.0.1.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.apache.spark#spark-mllib_2.11;2.0.1!spark-mllib_2.11.pom(pom.original) (164ms)[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.apache.spark#spark-mllib_2.11;2.0.1!spark-mllib_2.11.pom(pom.original) (29ms)[0m
 [0m[[0minfo[0m] [0mResolving org.apache.spark#spark-parent_2.11;2.0.1 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.apache.spark#spark-parent_2.11;2.0.1 {}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.apache.spark#spark-parent_2.11;2.0.1[0m
@@ -4721,7 +4721,7 @@
 [0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-streaming_2.11/2.0.1/spark-streaming_2.11-2.0.1.pom[0m
 [0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-streaming_2.11/2.0.1/spark-streaming_2.11-2.0.1.pom.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/org/apache/spark/spark-streaming_2.11/2.0.1/spark-streaming_2.11-2.0.1.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.apache.spark#spark-streaming_2.11;2.0.1!spark-streaming_2.11.pom(pom.original) (164ms)[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.apache.spark#spark-streaming_2.11;2.0.1!spark-streaming_2.11.pom(pom.original) (37ms)[0m
 [0m[[0minfo[0m] [0mResolving org.apache.spark#spark-parent_2.11;2.0.1 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.apache.spark#spark-parent_2.11;2.0.1 {}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.apache.spark#spark-parent_2.11;2.0.1[0m
@@ -4788,7 +4788,7 @@
 [0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-graphx_2.11/2.0.1/spark-graphx_2.11-2.0.1.pom[0m
 [0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-graphx_2.11/2.0.1/spark-graphx_2.11-2.0.1.pom.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/org/apache/spark/spark-graphx_2.11/2.0.1/spark-graphx_2.11-2.0.1.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.apache.spark#spark-graphx_2.11;2.0.1!spark-graphx_2.11.pom(pom.original) (168ms)[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.apache.spark#spark-graphx_2.11;2.0.1!spark-graphx_2.11.pom(pom.original) (52ms)[0m
 [0m[[0minfo[0m] [0mResolving org.apache.spark#spark-parent_2.11;2.0.1 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.apache.spark#spark-parent_2.11;2.0.1 {}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.apache.spark#spark-parent_2.11;2.0.1[0m
@@ -4848,7 +4848,7 @@
 [0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-mllib-local_2.11/2.0.1/spark-mllib-local_2.11-2.0.1.pom[0m
 [0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-mllib-local_2.11/2.0.1/spark-mllib-local_2.11-2.0.1.pom.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/org/apache/spark/spark-mllib-local_2.11/2.0.1/spark-mllib-local_2.11-2.0.1.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.apache.spark#spark-mllib-local_2.11;2.0.1!spark-mllib-local_2.11.pom(pom.original) (165ms)[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.apache.spark#spark-mllib-local_2.11;2.0.1!spark-mllib-local_2.11.pom(pom.original) (83ms)[0m
 [0m[[0minfo[0m] [0mResolving org.apache.spark#spark-parent_2.11;2.0.1 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.apache.spark#spark-parent_2.11;2.0.1 {}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.apache.spark#spark-parent_2.11;2.0.1[0m
@@ -16610,20 +16610,20 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.jpmml#pmml-schema;1.2.15!pmml-schema.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.slf4j#slf4j-api;1.7.21!slf4j-api.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] jline#jline;2.11!jline.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 6887ms :: artifacts dl 33ms[0m
-[0m[[0mdebug[0m] [0m	report for se.kth.spark#lab1_2.11;1.0 compile produced in /home/hadi/Dropbox/DeepLearning/Lab1/target/scala-2.11/resolution-cache/reports/se.kth.spark-lab1_2.11-compile.xml[0m
-[0m[[0mdebug[0m] [0m	report for se.kth.spark#lab1_2.11;1.0 runtime produced in /home/hadi/Dropbox/DeepLearning/Lab1/target/scala-2.11/resolution-cache/reports/se.kth.spark-lab1_2.11-runtime.xml[0m
-[0m[[0mdebug[0m] [0m	report for se.kth.spark#lab1_2.11;1.0 test produced in /home/hadi/Dropbox/DeepLearning/Lab1/target/scala-2.11/resolution-cache/reports/se.kth.spark-lab1_2.11-test.xml[0m
-[0m[[0mdebug[0m] [0m	report for se.kth.spark#lab1_2.11;1.0 provided produced in /home/hadi/Dropbox/DeepLearning/Lab1/target/scala-2.11/resolution-cache/reports/se.kth.spark-lab1_2.11-provided.xml[0m
-[0m[[0mdebug[0m] [0m	report for se.kth.spark#lab1_2.11;1.0 optional produced in /home/hadi/Dropbox/DeepLearning/Lab1/target/scala-2.11/resolution-cache/reports/se.kth.spark-lab1_2.11-optional.xml[0m
-[0m[[0mdebug[0m] [0m	report for se.kth.spark#lab1_2.11;1.0 compile-internal produced in /home/hadi/Dropbox/DeepLearning/Lab1/target/scala-2.11/resolution-cache/reports/se.kth.spark-lab1_2.11-compile-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for se.kth.spark#lab1_2.11;1.0 runtime-internal produced in /home/hadi/Dropbox/DeepLearning/Lab1/target/scala-2.11/resolution-cache/reports/se.kth.spark-lab1_2.11-runtime-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for se.kth.spark#lab1_2.11;1.0 test-internal produced in /home/hadi/Dropbox/DeepLearning/Lab1/target/scala-2.11/resolution-cache/reports/se.kth.spark-lab1_2.11-test-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for se.kth.spark#lab1_2.11;1.0 plugin produced in /home/hadi/Dropbox/DeepLearning/Lab1/target/scala-2.11/resolution-cache/reports/se.kth.spark-lab1_2.11-plugin.xml[0m
-[0m[[0mdebug[0m] [0m	report for se.kth.spark#lab1_2.11;1.0 sources produced in /home/hadi/Dropbox/DeepLearning/Lab1/target/scala-2.11/resolution-cache/reports/se.kth.spark-lab1_2.11-sources.xml[0m
-[0m[[0mdebug[0m] [0m	report for se.kth.spark#lab1_2.11;1.0 docs produced in /home/hadi/Dropbox/DeepLearning/Lab1/target/scala-2.11/resolution-cache/reports/se.kth.spark-lab1_2.11-docs.xml[0m
-[0m[[0mdebug[0m] [0m	report for se.kth.spark#lab1_2.11;1.0 pom produced in /home/hadi/Dropbox/DeepLearning/Lab1/target/scala-2.11/resolution-cache/reports/se.kth.spark-lab1_2.11-pom.xml[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 6870ms :: artifacts dl 49ms[0m
+[0m[[0mdebug[0m] [0m	report for se.kth.spark#lab1_2.11;1.0 compile produced in /home/hadi/Personal/University/EIT/2stYear/Q2/Scalable Machine Learning/Labs/DistributedLinearRegression/target/scala-2.11/resolution-cache/reports/se.kth.spark-lab1_2.11-compile.xml[0m
+[0m[[0mdebug[0m] [0m	report for se.kth.spark#lab1_2.11;1.0 runtime produced in /home/hadi/Personal/University/EIT/2stYear/Q2/Scalable Machine Learning/Labs/DistributedLinearRegression/target/scala-2.11/resolution-cache/reports/se.kth.spark-lab1_2.11-runtime.xml[0m
+[0m[[0mdebug[0m] [0m	report for se.kth.spark#lab1_2.11;1.0 test produced in /home/hadi/Personal/University/EIT/2stYear/Q2/Scalable Machine Learning/Labs/DistributedLinearRegression/target/scala-2.11/resolution-cache/reports/se.kth.spark-lab1_2.11-test.xml[0m
+[0m[[0mdebug[0m] [0m	report for se.kth.spark#lab1_2.11;1.0 provided produced in /home/hadi/Personal/University/EIT/2stYear/Q2/Scalable Machine Learning/Labs/DistributedLinearRegression/target/scala-2.11/resolution-cache/reports/se.kth.spark-lab1_2.11-provided.xml[0m
+[0m[[0mdebug[0m] [0m	report for se.kth.spark#lab1_2.11;1.0 optional produced in /home/hadi/Personal/University/EIT/2stYear/Q2/Scalable Machine Learning/Labs/DistributedLinearRegression/target/scala-2.11/resolution-cache/reports/se.kth.spark-lab1_2.11-optional.xml[0m
+[0m[[0mdebug[0m] [0m	report for se.kth.spark#lab1_2.11;1.0 compile-internal produced in /home/hadi/Personal/University/EIT/2stYear/Q2/Scalable Machine Learning/Labs/DistributedLinearRegression/target/scala-2.11/resolution-cache/reports/se.kth.spark-lab1_2.11-compile-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for se.kth.spark#lab1_2.11;1.0 runtime-internal produced in /home/hadi/Personal/University/EIT/2stYear/Q2/Scalable Machine Learning/Labs/DistributedLinearRegression/target/scala-2.11/resolution-cache/reports/se.kth.spark-lab1_2.11-runtime-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for se.kth.spark#lab1_2.11;1.0 test-internal produced in /home/hadi/Personal/University/EIT/2stYear/Q2/Scalable Machine Learning/Labs/DistributedLinearRegression/target/scala-2.11/resolution-cache/reports/se.kth.spark-lab1_2.11-test-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for se.kth.spark#lab1_2.11;1.0 plugin produced in /home/hadi/Personal/University/EIT/2stYear/Q2/Scalable Machine Learning/Labs/DistributedLinearRegression/target/scala-2.11/resolution-cache/reports/se.kth.spark-lab1_2.11-plugin.xml[0m
+[0m[[0mdebug[0m] [0m	report for se.kth.spark#lab1_2.11;1.0 sources produced in /home/hadi/Personal/University/EIT/2stYear/Q2/Scalable Machine Learning/Labs/DistributedLinearRegression/target/scala-2.11/resolution-cache/reports/se.kth.spark-lab1_2.11-sources.xml[0m
+[0m[[0mdebug[0m] [0m	report for se.kth.spark#lab1_2.11;1.0 docs produced in /home/hadi/Personal/University/EIT/2stYear/Q2/Scalable Machine Learning/Labs/DistributedLinearRegression/target/scala-2.11/resolution-cache/reports/se.kth.spark-lab1_2.11-docs.xml[0m
+[0m[[0mdebug[0m] [0m	report for se.kth.spark#lab1_2.11;1.0 pom produced in /home/hadi/Personal/University/EIT/2stYear/Q2/Scalable Machine Learning/Labs/DistributedLinearRegression/target/scala-2.11/resolution-cache/reports/se.kth.spark-lab1_2.11-pom.xml[0m
 [0m[[0mdebug[0m] [0mcircular dependency found: org.scala-lang#scala-compiler;2.11.1->org.scala-lang.modules#scala-xml_2.11;1.0.2->...[0m
-[0m[[0mdebug[0m] [0m	report for se.kth.spark#lab1_2.11;1.0 scala-tool produced in /home/hadi/Dropbox/DeepLearning/Lab1/target/scala-2.11/resolution-cache/reports/se.kth.spark-lab1_2.11-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (6887ms resolve - 33ms download)[0m
+[0m[[0mdebug[0m] [0m	report for se.kth.spark#lab1_2.11;1.0 scala-tool produced in /home/hadi/Personal/University/EIT/2stYear/Q2/Scalable Machine Learning/Labs/DistributedLinearRegression/target/scala-2.11/resolution-cache/reports/se.kth.spark-lab1_2.11-scala-tool.xml[0m
+[0m[[0mdebug[0m] [0m	resolve done (6870ms resolve - 49ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m

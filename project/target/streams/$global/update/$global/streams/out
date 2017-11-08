@@ -1,11 +1,11 @@
-[0m[[0minfo[0m] [0mUpdating {file:/home/hadi/Dropbox/DeepLearning/Lab1/project/}lab1-build...[0m
-[0m[[0mdebug[0m] [0m:: resolving dependencies :: default#lab1-build;0.1-SNAPSHOT[0m
+[0m[[0minfo[0m] [0mUpdating {file:/home/hadi/Personal/University/EIT/2stYear/Q2/Scalable%20Machine%20Learning/Labs/DistributedLinearRegression/project/}distributedlinearregression-build...[0m
+[0m[[0mdebug[0m] [0m:: resolving dependencies :: default#distributedlinearregression-build;0.1-SNAPSHOT[0m
 [0m[[0mdebug[0m] [0m	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool][0m
 [0m[[0mdebug[0m] [0m	validate = true[0m
 [0m[[0mdebug[0m] [0m	refresh = false[0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'compile'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#lab1-build;0.1-SNAPSHOT [compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#lab1-build;0.1-SNAPSHOT->org.scala-sbt#global-plugins;0.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#distributedlinearregression-build;0.1-SNAPSHOT [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#distributedlinearregression-build;0.1-SNAPSHOT->org.scala-sbt#global-plugins;0.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)], provided=[default(compile)]}[0m
 [0m[[0minfo[0m] [0mResolving org.scala-sbt#global-plugins;0.0 ...[0m
@@ -13,7 +13,7 @@
 [0m[[0mdebug[0m] [0m	found org.scala-sbt#global-plugins;0.0 in inter-project[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)], provided=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#lab1-build;0.1-SNAPSHOT->com.eed3si9n#sbt-assembly;0.14.3 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#distributedlinearregression-build;0.1-SNAPSHOT->com.eed3si9n#sbt-assembly;0.14.3 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)], provided=[default(compile)]}[0m
 [0m[[0minfo[0m] [0mResolving com.eed3si9n#sbt-assembly;0.14.3 ...[0m
@@ -348,7 +348,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.pantsbuild#jarjar;1.6.0->org.apache.maven#maven-plugin-api;3.3.3 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.pantsbuild#jarjar;1.6.0->org.apache.maven#maven-plugin-api;3.3.3 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.eed3si9n#sbt-assembly;0.14.3->org.pantsbuild#jarjar;1.6.0 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#lab1-build;0.1-SNAPSHOT->com.typesafe.sbteclipse#sbteclipse-plugin;5.0.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#distributedlinearregression-build;0.1-SNAPSHOT->com.typesafe.sbteclipse#sbteclipse-plugin;5.0.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)], provided=[default(compile)]}[0m
 [0m[[0minfo[0m] [0mResolving com.typesafe.sbteclipse#sbteclipse-plugin;5.0.1 ...[0m
@@ -420,16 +420,16 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'runtime'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#lab1-build;0.1-SNAPSHOT [runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#lab1-build;0.1-SNAPSHOT [compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#lab1-build;0.1-SNAPSHOT->org.scala-sbt#global-plugins;0.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#distributedlinearregression-build;0.1-SNAPSHOT [runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#distributedlinearregression-build;0.1-SNAPSHOT [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#distributedlinearregression-build;0.1-SNAPSHOT->org.scala-sbt#global-plugins;0.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)], provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)], provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)], provided=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#lab1-build;0.1-SNAPSHOT->com.eed3si9n#sbt-assembly;0.14.3 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#distributedlinearregression-build;0.1-SNAPSHOT->com.eed3si9n#sbt-assembly;0.14.3 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)], provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]}[0m
@@ -708,7 +708,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.sisu#org.eclipse.sisu.plexus;0.3.0->org.codehaus.plexus#plexus-utils;3.0.20 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.sisu#org.eclipse.sisu.plexus;0.3.0->org.codehaus.plexus#plexus-utils;3.0.20 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.eed3si9n#sbt-assembly;0.14.3->org.pantsbuild#jarjar;1.6.0 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#lab1-build;0.1-SNAPSHOT->com.typesafe.sbteclipse#sbteclipse-plugin;5.0.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#distributedlinearregression-build;0.1-SNAPSHOT->com.typesafe.sbteclipse#sbteclipse-plugin;5.0.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)], provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]}[0m
@@ -772,10 +772,10 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'test'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#lab1-build;0.1-SNAPSHOT [test][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#lab1-build;0.1-SNAPSHOT [runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#lab1-build;0.1-SNAPSHOT [compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#lab1-build;0.1-SNAPSHOT->org.scala-sbt#global-plugins;0.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#distributedlinearregression-build;0.1-SNAPSHOT [test][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#distributedlinearregression-build;0.1-SNAPSHOT [runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#distributedlinearregression-build;0.1-SNAPSHOT [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#distributedlinearregression-build;0.1-SNAPSHOT->org.scala-sbt#global-plugins;0.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)], provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]}[0m
@@ -784,7 +784,7 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)], provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)], provided=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#lab1-build;0.1-SNAPSHOT->com.eed3si9n#sbt-assembly;0.14.3 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#distributedlinearregression-build;0.1-SNAPSHOT->com.eed3si9n#sbt-assembly;0.14.3 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)], provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]}[0m
@@ -1105,7 +1105,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.sisu#org.eclipse.sisu.plexus;0.3.0->org.codehaus.plexus#plexus-utils;3.0.20 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.sisu#org.eclipse.sisu.plexus;0.3.0->org.codehaus.plexus#plexus-utils;3.0.20 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.eed3si9n#sbt-assembly;0.14.3->org.pantsbuild#jarjar;1.6.0 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#lab1-build;0.1-SNAPSHOT->com.typesafe.sbteclipse#sbteclipse-plugin;5.0.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#distributedlinearregression-build;0.1-SNAPSHOT->com.typesafe.sbteclipse#sbteclipse-plugin;5.0.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)], provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]}[0m
@@ -1175,14 +1175,14 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'provided'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#lab1-build;0.1-SNAPSHOT [provided][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#lab1-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [provided->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#distributedlinearregression-build;0.1-SNAPSHOT [provided][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#distributedlinearregression-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [provided->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)], provided=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#lab1-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [provided->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#lab1-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [provided->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#lab1-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [provided->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#lab1-build;0.1-SNAPSHOT->org.scala-sbt#sbt;0.13.16 [provided->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#distributedlinearregression-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [provided->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#distributedlinearregression-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [provided->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#distributedlinearregression-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [provided->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#distributedlinearregression-build;0.1-SNAPSHOT->org.scala-sbt#sbt;0.13.16 [provided->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)], provided=[default(compile)]}[0m
 [0m[[0minfo[0m] [0mResolving org.scala-sbt#sbt;0.13.16 ...[0m
@@ -2963,11 +2963,11 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {provided=[default(compile)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'optional'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#lab1-build;0.1-SNAPSHOT [optional][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#distributedlinearregression-build;0.1-SNAPSHOT [optional][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'compile-internal'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#lab1-build;0.1-SNAPSHOT [compile-internal][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#lab1-build;0.1-SNAPSHOT [compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#lab1-build;0.1-SNAPSHOT->org.scala-sbt#global-plugins;0.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#distributedlinearregression-build;0.1-SNAPSHOT [compile-internal][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#distributedlinearregression-build;0.1-SNAPSHOT [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#distributedlinearregression-build;0.1-SNAPSHOT->org.scala-sbt#global-plugins;0.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)], provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]}[0m
@@ -2978,7 +2978,7 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)], provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)], provided=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#lab1-build;0.1-SNAPSHOT->com.eed3si9n#sbt-assembly;0.14.3 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#distributedlinearregression-build;0.1-SNAPSHOT->com.eed3si9n#sbt-assembly;0.14.3 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)], provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]}[0m
@@ -3341,7 +3341,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.sisu#org.eclipse.sisu.plexus;0.3.0->org.codehaus.plexus#plexus-utils;3.0.20 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.sisu#org.eclipse.sisu.plexus;0.3.0->org.codehaus.plexus#plexus-utils;3.0.20 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.eed3si9n#sbt-assembly;0.14.3->org.pantsbuild#jarjar;1.6.0 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#lab1-build;0.1-SNAPSHOT->com.typesafe.sbteclipse#sbteclipse-plugin;5.0.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#distributedlinearregression-build;0.1-SNAPSHOT->com.typesafe.sbteclipse#sbteclipse-plugin;5.0.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)], provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]}[0m
@@ -3416,13 +3416,13 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-plugin;5.0.1->org.scalaz#scalaz-effect_2.10;7.2.5 [compile->master][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#lab1-build;0.1-SNAPSHOT [optional][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#lab1-build;0.1-SNAPSHOT [provided][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#lab1-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [provided->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#lab1-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [provided->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#lab1-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [provided->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#lab1-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [provided->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#lab1-build;0.1-SNAPSHOT->org.scala-sbt#sbt;0.13.16 [provided->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#distributedlinearregression-build;0.1-SNAPSHOT [optional][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#distributedlinearregression-build;0.1-SNAPSHOT [provided][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#distributedlinearregression-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [provided->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#distributedlinearregression-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [provided->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#distributedlinearregression-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [provided->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#distributedlinearregression-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [provided->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#distributedlinearregression-build;0.1-SNAPSHOT->org.scala-sbt#sbt;0.13.16 [provided->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)], provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]}[0m
@@ -5275,10 +5275,10 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {provided=[default(compile)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'runtime-internal'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#lab1-build;0.1-SNAPSHOT [runtime-internal][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#lab1-build;0.1-SNAPSHOT [runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#lab1-build;0.1-SNAPSHOT [compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#lab1-build;0.1-SNAPSHOT->org.scala-sbt#global-plugins;0.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#distributedlinearregression-build;0.1-SNAPSHOT [runtime-internal][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#distributedlinearregression-build;0.1-SNAPSHOT [runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#distributedlinearregression-build;0.1-SNAPSHOT [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#distributedlinearregression-build;0.1-SNAPSHOT->org.scala-sbt#global-plugins;0.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)], provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]}[0m
@@ -5289,7 +5289,7 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)], provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)], provided=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#lab1-build;0.1-SNAPSHOT->com.eed3si9n#sbt-assembly;0.14.3 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#distributedlinearregression-build;0.1-SNAPSHOT->com.eed3si9n#sbt-assembly;0.14.3 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)], provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]}[0m
@@ -5652,7 +5652,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.sisu#org.eclipse.sisu.plexus;0.3.0->org.codehaus.plexus#plexus-utils;3.0.20 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.sisu#org.eclipse.sisu.plexus;0.3.0->org.codehaus.plexus#plexus-utils;3.0.20 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.eed3si9n#sbt-assembly;0.14.3->org.pantsbuild#jarjar;1.6.0 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#lab1-build;0.1-SNAPSHOT->com.typesafe.sbteclipse#sbteclipse-plugin;5.0.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#distributedlinearregression-build;0.1-SNAPSHOT->com.typesafe.sbteclipse#sbteclipse-plugin;5.0.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)], provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]}[0m
@@ -5727,13 +5727,13 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-plugin;5.0.1->org.scalaz#scalaz-effect_2.10;7.2.5 [compile->master][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#lab1-build;0.1-SNAPSHOT [optional][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#distributedlinearregression-build;0.1-SNAPSHOT [optional][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'test-internal'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#lab1-build;0.1-SNAPSHOT [test-internal][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#lab1-build;0.1-SNAPSHOT [test][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#lab1-build;0.1-SNAPSHOT [runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#lab1-build;0.1-SNAPSHOT [compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#lab1-build;0.1-SNAPSHOT->org.scala-sbt#global-plugins;0.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#distributedlinearregression-build;0.1-SNAPSHOT [test-internal][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#distributedlinearregression-build;0.1-SNAPSHOT [test][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#distributedlinearregression-build;0.1-SNAPSHOT [runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#distributedlinearregression-build;0.1-SNAPSHOT [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#distributedlinearregression-build;0.1-SNAPSHOT->org.scala-sbt#global-plugins;0.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)], provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]}[0m
@@ -5748,7 +5748,7 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)], provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)], provided=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#lab1-build;0.1-SNAPSHOT->com.eed3si9n#sbt-assembly;0.14.3 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#distributedlinearregression-build;0.1-SNAPSHOT->com.eed3si9n#sbt-assembly;0.14.3 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)], provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]}[0m
@@ -6195,7 +6195,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.sisu#org.eclipse.sisu.plexus;0.3.0->org.codehaus.plexus#plexus-utils;3.0.20 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.sisu#org.eclipse.sisu.plexus;0.3.0->org.codehaus.plexus#plexus-utils;3.0.20 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.eed3si9n#sbt-assembly;0.14.3->org.pantsbuild#jarjar;1.6.0 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#lab1-build;0.1-SNAPSHOT->com.typesafe.sbteclipse#sbteclipse-plugin;5.0.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#distributedlinearregression-build;0.1-SNAPSHOT->com.typesafe.sbteclipse#sbteclipse-plugin;5.0.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)], provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]}[0m
@@ -6282,13 +6282,13 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-plugin;5.0.1->org.scalaz#scalaz-effect_2.10;7.2.5 [compile->master][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#lab1-build;0.1-SNAPSHOT [optional][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#lab1-build;0.1-SNAPSHOT [provided][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#lab1-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [provided->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#lab1-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [provided->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#lab1-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [provided->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#lab1-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [provided->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#lab1-build;0.1-SNAPSHOT->org.scala-sbt#sbt;0.13.16 [provided->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#distributedlinearregression-build;0.1-SNAPSHOT [optional][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#distributedlinearregression-build;0.1-SNAPSHOT [provided][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#distributedlinearregression-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [provided->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#distributedlinearregression-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [provided->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#distributedlinearregression-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [provided->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#distributedlinearregression-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [provided->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#distributedlinearregression-build;0.1-SNAPSHOT->org.scala-sbt#sbt;0.13.16 [provided->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)], provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]}[0m
@@ -8337,20 +8337,20 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {provided=[default(compile)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'plugin'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#lab1-build;0.1-SNAPSHOT [plugin][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#distributedlinearregression-build;0.1-SNAPSHOT [plugin][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'sources'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#lab1-build;0.1-SNAPSHOT [sources][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#distributedlinearregression-build;0.1-SNAPSHOT [sources][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'docs'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#lab1-build;0.1-SNAPSHOT [docs][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#distributedlinearregression-build;0.1-SNAPSHOT [docs][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'pom'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#lab1-build;0.1-SNAPSHOT [pom][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#distributedlinearregression-build;0.1-SNAPSHOT [pom][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'scala-tool'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#lab1-build;0.1-SNAPSHOT [scala-tool][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#lab1-build;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.10.6 [scala-tool->default][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#distributedlinearregression-build;0.1-SNAPSHOT [scala-tool][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#distributedlinearregression-build;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.10.6 [scala-tool->default][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)], provided=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#lab1-build;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.10.6 [scala-tool->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#lab1-build;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.10.6 [scala-tool->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#distributedlinearregression-build;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.10.6 [scala-tool->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#distributedlinearregression-build;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.10.6 [scala-tool->compile][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-reflect;2.10.6 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-reflect;2.10.6 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#jline;2.10.6 {optional=[compile(*), master(*)]} => dependency: org.scala-lang#jline;2.10.6 {optional=[compile(*), master(*)]}[0m
@@ -8416,14 +8416,14 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.10.6->org.scala-lang#scala-library;2.10.6 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.10.6->org.scala-lang#scala-library;2.10.6 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#lab1-build;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.10.6 [scala-tool->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#distributedlinearregression-build;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.10.6 [scala-tool->master][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-reflect;2.10.6 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-reflect;2.10.6 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#jline;2.10.6 {optional=[compile(*), master(*)]} => dependency: org.scala-lang#jline;2.10.6 {optional=[compile(*), master(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-reflect;2.10.6 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-reflect;2.10.6 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#jline;2.10.6 {optional=[compile(*), master(*)]} => dependency: org.scala-lang#jline;2.10.6 {optional=[compile(*), master(*)]}[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#lab1-build;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.10.6 [scala-tool->optional(default)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#distributedlinearregression-build;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.10.6 [scala-tool->optional(default)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-reflect;2.10.6 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-reflect;2.10.6 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#jline;2.10.6 {optional=[compile(*), master(*)]} => dependency: org.scala-lang#jline;2.10.6 {optional=[compile(*), master(*)]}[0m
@@ -8479,11 +8479,11 @@
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.fusesource.jansi#jansi;1.4[0m
 [0m[[0mdebug[0m] [0m	found org.fusesource.jansi#jansi;1.4 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#jline;2.10.6->org.fusesource.jansi#jansi;1.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#lab1-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [scala-tool->default][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#lab1-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [scala-tool->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#lab1-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [scala-tool->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#lab1-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [scala-tool->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#lab1-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [scala-tool->optional(default)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#distributedlinearregression-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [scala-tool->default][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#distributedlinearregression-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [scala-tool->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#distributedlinearregression-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [scala-tool->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#distributedlinearregression-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [scala-tool->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#distributedlinearregression-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [scala-tool->optional(default)][0m
 [0m[[0mdebug[0m] [0mignoring unhandled DependencyDescriptorMediator: class sbt.IvyScala$OverrideScalaMediator[0m
 [0m[[0mdebug[0m] [0m	resolved ivy file produced in cache[0m
 [0m[[0mdebug[0m] [0m:: downloading artifacts ::[0m
@@ -8562,19 +8562,19 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-sbt#template-resolver;0.1!template-resolver.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#jline;2.10.6!jline.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 1174ms :: artifacts dl 26ms[0m
-[0m[[0mdebug[0m] [0m	report for default#lab1-build;0.1-SNAPSHOT compile produced in /home/hadi/Dropbox/DeepLearning/Lab1/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-lab1-build-compile.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#lab1-build;0.1-SNAPSHOT runtime produced in /home/hadi/Dropbox/DeepLearning/Lab1/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-lab1-build-runtime.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#lab1-build;0.1-SNAPSHOT test produced in /home/hadi/Dropbox/DeepLearning/Lab1/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-lab1-build-test.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#lab1-build;0.1-SNAPSHOT provided produced in /home/hadi/Dropbox/DeepLearning/Lab1/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-lab1-build-provided.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#lab1-build;0.1-SNAPSHOT optional produced in /home/hadi/Dropbox/DeepLearning/Lab1/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-lab1-build-optional.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#lab1-build;0.1-SNAPSHOT compile-internal produced in /home/hadi/Dropbox/DeepLearning/Lab1/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-lab1-build-compile-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#lab1-build;0.1-SNAPSHOT runtime-internal produced in /home/hadi/Dropbox/DeepLearning/Lab1/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-lab1-build-runtime-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#lab1-build;0.1-SNAPSHOT test-internal produced in /home/hadi/Dropbox/DeepLearning/Lab1/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-lab1-build-test-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#lab1-build;0.1-SNAPSHOT plugin produced in /home/hadi/Dropbox/DeepLearning/Lab1/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-lab1-build-plugin.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#lab1-build;0.1-SNAPSHOT sources produced in /home/hadi/Dropbox/DeepLearning/Lab1/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-lab1-build-sources.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#lab1-build;0.1-SNAPSHOT docs produced in /home/hadi/Dropbox/DeepLearning/Lab1/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-lab1-build-docs.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#lab1-build;0.1-SNAPSHOT pom produced in /home/hadi/Dropbox/DeepLearning/Lab1/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-lab1-build-pom.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#lab1-build;0.1-SNAPSHOT scala-tool produced in /home/hadi/Dropbox/DeepLearning/Lab1/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-lab1-build-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (1174ms resolve - 26ms download)[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 1570ms :: artifacts dl 27ms[0m
+[0m[[0mdebug[0m] [0m	report for default#distributedlinearregression-build;0.1-SNAPSHOT compile produced in /home/hadi/Personal/University/EIT/2stYear/Q2/Scalable Machine Learning/Labs/DistributedLinearRegression/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-distributedlinearregression-build-compile.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#distributedlinearregression-build;0.1-SNAPSHOT runtime produced in /home/hadi/Personal/University/EIT/2stYear/Q2/Scalable Machine Learning/Labs/DistributedLinearRegression/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-distributedlinearregression-build-runtime.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#distributedlinearregression-build;0.1-SNAPSHOT test produced in /home/hadi/Personal/University/EIT/2stYear/Q2/Scalable Machine Learning/Labs/DistributedLinearRegression/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-distributedlinearregression-build-test.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#distributedlinearregression-build;0.1-SNAPSHOT provided produced in /home/hadi/Personal/University/EIT/2stYear/Q2/Scalable Machine Learning/Labs/DistributedLinearRegression/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-distributedlinearregression-build-provided.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#distributedlinearregression-build;0.1-SNAPSHOT optional produced in /home/hadi/Personal/University/EIT/2stYear/Q2/Scalable Machine Learning/Labs/DistributedLinearRegression/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-distributedlinearregression-build-optional.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#distributedlinearregression-build;0.1-SNAPSHOT compile-internal produced in /home/hadi/Personal/University/EIT/2stYear/Q2/Scalable Machine Learning/Labs/DistributedLinearRegression/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-distributedlinearregression-build-compile-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#distributedlinearregression-build;0.1-SNAPSHOT runtime-internal produced in /home/hadi/Personal/University/EIT/2stYear/Q2/Scalable Machine Learning/Labs/DistributedLinearRegression/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-distributedlinearregression-build-runtime-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#distributedlinearregression-build;0.1-SNAPSHOT test-internal produced in /home/hadi/Personal/University/EIT/2stYear/Q2/Scalable Machine Learning/Labs/DistributedLinearRegression/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-distributedlinearregression-build-test-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#distributedlinearregression-build;0.1-SNAPSHOT plugin produced in /home/hadi/Personal/University/EIT/2stYear/Q2/Scalable Machine Learning/Labs/DistributedLinearRegression/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-distributedlinearregression-build-plugin.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#distributedlinearregression-build;0.1-SNAPSHOT sources produced in /home/hadi/Personal/University/EIT/2stYear/Q2/Scalable Machine Learning/Labs/DistributedLinearRegression/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-distributedlinearregression-build-sources.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#distributedlinearregression-build;0.1-SNAPSHOT docs produced in /home/hadi/Personal/University/EIT/2stYear/Q2/Scalable Machine Learning/Labs/DistributedLinearRegression/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-distributedlinearregression-build-docs.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#distributedlinearregression-build;0.1-SNAPSHOT pom produced in /home/hadi/Personal/University/EIT/2stYear/Q2/Scalable Machine Learning/Labs/DistributedLinearRegression/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-distributedlinearregression-build-pom.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#distributedlinearregression-build;0.1-SNAPSHOT scala-tool produced in /home/hadi/Personal/University/EIT/2stYear/Q2/Scalable Machine Learning/Labs/DistributedLinearRegression/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-distributedlinearregression-build-scala-tool.xml[0m
+[0m[[0mdebug[0m] [0m	resolve done (1570ms resolve - 27ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m

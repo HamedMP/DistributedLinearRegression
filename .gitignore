@@ -80,3 +80,4 @@ local.properties
 .idea/
 
 .DS_Store
+/bin/

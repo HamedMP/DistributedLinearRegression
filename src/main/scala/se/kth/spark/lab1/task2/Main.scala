@@ -36,7 +36,7 @@ object Main {
     
 //
 //    //Step4: extract the label(year) into a new column
-//    val lSlicer = arr2Vect("year")
+//    val lSlicer = ???
 
 //    //Step5: convert type of the label from vector to double (use our Vector2Double)
 //    val v2d = new Vector2DoubleUDF(???)

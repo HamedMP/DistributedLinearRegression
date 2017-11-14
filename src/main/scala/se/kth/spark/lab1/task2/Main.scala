@@ -3,6 +3,7 @@ package se.kth.spark.lab1.task2
 import se.kth.spark.lab1._
 
 import org.apache.spark.ml.feature.RegexTokenizer
+import org.apache.spark.ml.feature.VectorSlicer
 import org.apache.spark.ml.Pipeline
 import org.apache.spark.SparkConf
 import org.apache.spark.SparkContext
@@ -32,14 +33,21 @@ object Main {
     tokensArray.select("prediction").take(5).foreach(println)
 
     //Step3: transform array of tokens to a vector of tokens (use our ArrayToVector)
-    val arr2Vect = new Array2Vector()
+    val arr2Vect = new Array2Vector(tokensArray.toString())
+    println("AAA")
+    println(arr2Vect.toList.toString())
+    println("AAA")
+ 
     
 //
 //    //Step4: extract the label(year) into a new column
-//    val lSlicer = ???
-
+    val lSlicer = new VectorSlicer().setInputCol("prediction").setOutputCol("year")
+    lSlicer.setIndices(Array(0)).setNames(Array("year"))
+    val output = lSlicer.transform(tokensArray)
+    output.show()
+    
 //    //Step5: convert type of the label from vector to double (use our Vector2Double)
-//    val v2d = new Vector2DoubleUDF(???)
+//    val v2d = new Vector2DoubleUDF(arr2Vect)
 //    
 //    //Step6: shift all labels by the value of minimum label such that the value of the smallest becomes 0 (use our DoubleUDF) 
 //    val lShifter = new DoubleUDF(???)

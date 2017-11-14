@@ -30,23 +30,19 @@ object Main {
 
     //Step2: transform with tokenizer and show 5 rows
     val tokensArray= regexTokenizer.transform(rawDF)
-    tokensArray.select("prediction").take(5).foreach(println)
+//  tokensArray.select("prediction").take(5).foreach(println)
 
     //Step3: transform array of tokens to a vector of tokens (use our ArrayToVector)
-    val arr2Vect = new Array2Vector(tokensArray.toString())
-    println("AAA")
-//    println(arr2Vect)
-    println("AAA")
- 
+    val arr2Vect = new Array2Vector().setInputCol("prediction").setOutputCol("arr2VectPrediction")
+    val arr2VectTokenArray = arr2Vect.transform(tokensArray)
     
-//
-//    //Step4: extract the label(year) into a new column
-    val lSlicer = new VectorSlicer().setInputCol("prediction").setOutputCol("year")
-    lSlicer.setIndices(Array(0)).setNames(Array("year"))
-    val output = lSlicer.transform(tokensArray)
+//  Step4: extract the label(year) into a new column
+    val lSlicer = new VectorSlicer().setInputCol("arr2VectPrediction").setOutputCol("year")
+    lSlicer.setIndices(Array(0))
+    val output = lSlicer.transform(arr2VectTokenArray)
     output.show()
-    
-//    //Step5: convert type of the label from vector to double (use our Vector2Double)
+//    
+//    Step5: convert type of the label from vector to double (use our Vector2Double)
 //    val v2d = new Vector2DoubleUDF(arr2Vect)
 //    
 //    //Step6: shift all labels by the value of minimum label such that the value of the smallest becomes 0 (use our DoubleUDF) 

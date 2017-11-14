@@ -19,33 +19,35 @@ object Main {
 
     import sqlContext.implicits._
     import sqlContext._
-    
+
     val filePath = "src/main/resources/millionsong.txt"
 
     val rdd = sc.textFile(filePath)
-    //Step1: print the first 5 rows, what is the delimiter, number of features and the data types?
-//    rdd.take(5).foreach(println)
-    
+
     //Step2: split each row into an array of features
-    val recordsRdd = rdd.map(s=>s.split(","))
-    
+    val recordsRdd = rdd.map(s => s.split(","))
+
     //Step3: map each row into a Song object by using the year label and the first three features  
-    val songsRdd = recordsRdd.map(s => Song(s(0).toDouble,s(1).toDouble,s(2).toDouble,s(3).toDouble))
+    val songsRdd = recordsRdd.map(s => Song(s(0).toDouble, s(1).toDouble, s(2).toDouble, s(3).toDouble))
+
     //Step4: convert your rdd into a dataframe
     val songsDf = songsRdd.toDF()
-//    songsDf.collect().foreach(println)
-//    songsDf.show()
-//    Q1
-    println(songsDf.count()) 
-//    Q2
-    val yearCol= col("year")
-    songsDf.groupBy("year").count().filter(yearCol<=2000 && yearCol>=1998).agg(sum(col("count"))).show()
-//    Q3
+
+    // Q1
+    println(songsDf.count())
+    // Q2
+    val yearCol = col("year")
+    songsDf.groupBy("year").count().filter(yearCol <= 2000 && yearCol >= 1998)
+      .agg(sum(col("count")))
+      .show()
+
+    // Q3
     songsDf.select(min(yearCol)).show()
     songsDf.select(max(yearCol)).show()
     songsDf.select(avg(yearCol)).show()
-//    Q4
-    songsDf.groupBy("year").count().filter(yearCol<=2010 && yearCol>=2000).sort(col("year")).show()
+
+    // Q4
+    songsDf.groupBy("year").count().filter(yearCol <= 2010 && yearCol >= 2000).sort(col("year")).show()
 
   }
 }

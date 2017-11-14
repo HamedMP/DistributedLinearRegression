@@ -23,6 +23,7 @@ object Main {
     .map(s => (s(0).toDouble, Array(s(1).toDouble,s(2).toDouble,s(3).toDouble)))
     .toDF("year", "features")
     
+    myDF.take(5).foreach(println)
 //    myDf.take(5).foreach(println)
 //    val rawDF = rdd.toDF("rawDF").cache()
     

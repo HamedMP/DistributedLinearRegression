@@ -35,7 +35,7 @@ object Main {
     //Step3: transform array of tokens to a vector of tokens (use our ArrayToVector)
     val arr2Vect = new Array2Vector(tokensArray.toString())
     println("AAA")
-    println(arr2Vect.toList.toString())
+//    println(arr2Vect)
     println("AAA")
  
     

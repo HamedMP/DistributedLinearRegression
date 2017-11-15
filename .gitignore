@@ -91,3 +91,4 @@ target/
 spark-warehouse/
 spark.log
 /bin/se
+/bin/

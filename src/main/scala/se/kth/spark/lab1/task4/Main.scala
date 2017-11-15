@@ -95,6 +95,6 @@ object Main {
     //print rmse of our model
     println(s"RMSE: ${lrModel.summary.rootMeanSquaredError}")
     //do prediction - print first k
-    lrModel.transform(transformed) //!!!
+    cvModel.bestModel.transform(obsDF).select("label", "prediction").take(5).foreach(println)
   }
 }

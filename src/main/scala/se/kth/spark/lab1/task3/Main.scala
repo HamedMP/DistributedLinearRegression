@@ -21,10 +21,11 @@ object Main {
     
     val filePath = "src/main/resources/millionsong.txt"
     val rdd = sc.textFile(filePath)
-
     val obsDF: DataFrame = rdd.toDF("rawDF").cache()
-
-
+    val splits = obsDF.randomSplit(Array(0.8, 0.2))
+    val train = splits(0).cache()
+    val test = splits(1).cache()
+    
     //Step1: tokenize each row
     val regexTokenizer = new RegexTokenizer()
       .setInputCol("rawDF")
@@ -32,7 +33,7 @@ object Main {
       .setPattern(",")
 
     //Step2: transform with tokenizer and show 5 rows
-    val tokensArray = regexTokenizer.transform(obsDF)
+    val tokensArray = regexTokenizer.transform(train)
 
     tokensArray.select("data").take(5).foreach(println)
 
@@ -86,10 +87,10 @@ object Main {
     val pipeline = new Pipeline().setStages(Array(regexTokenizer, arr2Vect, lSlicer, v2d, lShifter, fSlicer, learningAlg))
 
 //    //fit on the training data
-    val pipelineModel = pipeline.fit(obsDF)
+    val pipelineModel = pipeline.fit(train)
 //
 //    //Step10: transform data with the model - do predictions TODO
-    val transformed = pipelineModel.transform(obsDF)
+    val transformed = pipelineModel.transform(test)
 
     //Step11: drop all columns from the dataframe other than label and features
 //    val finalDF = transformed.select("label", "features")

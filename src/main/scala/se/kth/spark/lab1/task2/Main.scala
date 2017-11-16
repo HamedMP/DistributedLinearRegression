@@ -21,8 +21,8 @@ object Main {
 
     val filePath = "src/main/resources/millionsong.txt"
     val rdd = sc.textFile(filePath)
-    val rawDF = rdd.toDF("rawDF").cache()
-
+    val rawDF = rdd.toDF("rawDF").cache()    
+    
     //Step1: tokenize each row
     val regexTokenizer = new RegexTokenizer()
       .setInputCol("rawDF")

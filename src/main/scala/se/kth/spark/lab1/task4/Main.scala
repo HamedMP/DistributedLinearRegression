@@ -27,13 +27,16 @@ object Main {
     val rdd = sc.textFile(filePath)
 
     val obsDF: DataFrame = rdd.toDF("rawDF").cache()
+    val splits = obsDF.randomSplit(Array(0.8, 0.2))
+    val train = splits(0).cache()
+    val test = splits(1).cache()
     
     val regexTokenizer = new RegexTokenizer()
       .setInputCol("rawDF")
       .setOutputCol("data")
       .setPattern(",")
       
-    val tokensArray = regexTokenizer.transform(obsDF)
+    val tokensArray = regexTokenizer.transform(train)
     
     val arr2Vect = new Array2Vector()
       .setInputCol("data")
@@ -71,9 +74,9 @@ object Main {
       
     val pipeline = new Pipeline().setStages(Array(regexTokenizer, arr2Vect, lSlicer, v2d, lShifter, fSlicer, learningAlg))
 
-    val pipelineModel = pipeline.fit(obsDF)
+    val pipelineModel = pipeline.fit(train)
 
-    val transformed = pipelineModel.transform(obsDF)
+    val transformed = pipelineModel.transform(test)
 
     val lrStage = 6 //index of our linearRegression algorithm
     val trainingSummary = pipelineModel.stages(lrStage).asInstanceOf[LinearRegressionModel].summary
@@ -89,12 +92,12 @@ object Main {
     .setEstimatorParamMaps(paramGrid)
     .setNumFolds(3)
         
-    val cvModel = cv.fit(obsDF)
+    val cvModel = cv.fit(train)
     val lrModel = cvModel.bestModel.asInstanceOf[PipelineModel].stages(lrStage).asInstanceOf[LinearRegressionModel]
     
     //print rmse of our model
     println(s"RMSE: ${lrModel.summary.rootMeanSquaredError}")
     //do prediction - print first k
-    cvModel.bestModel.transform(obsDF).select("label", "prediction").take(5).foreach(println)
+    cvModel.bestModel.transform(test).select("label", "prediction").take(5).foreach(println)
   }
 }

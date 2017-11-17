@@ -14,11 +14,15 @@ import org.apache.spark.ml.linalg.Vectors
 import org.apache.spark.ml.linalg.Matrices
 import org.apache.spark.mllib.evaluation.RegressionMetrics
 
+import breeze.linalg.DenseVector
+import breeze.numerics._
+import breeze.linalg._
+
 case class Instance(label: Double, features: Vector)
 
 object Helper {
   def rmse(labelsAndPreds: RDD[(Double, Double)]): Double = {
-    ???
+    sqrt(sum(pow(labelsAndPreds.collect()._1 - labelsAndPreds.collect()._2, 2)) / v1.size)
   }
 
   def predictOne(weights: Vector, features: Vector): Double = {

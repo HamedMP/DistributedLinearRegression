@@ -8,16 +8,16 @@ import breeze.numerics._
 
 
 object VectorHelper {
-  def dot(v1: Vector, v2: Vector): Double = {
-    linalg.Vector(v1) * linalg.Vector(v2)
+  def dot(v1: Transpose[DenseVector[Double]], v2: DenseVector[Double]): Double = {
+    v1 * v2
   }
 
-  def dot(v: Vector, s: Double): Vector = {
-    linalg.Vector(v) *:* s
+  def dot(v: DenseVector[Double], s: Double): DenseVector[Double] = {
+    v * s
   }
 
-  def sum(v1: Vector, v2: Vector): Vector = {
-    linalg.Vector(v1) + linalg.Vector(v2)
+  def sum(v1: DenseVector[Double], v2: DenseVector[Double]): DenseVector[Double] = {
+    v1 + v2
   }
 
   def fill(size: Int, fillVal: Double): DenseVector[Double] = {

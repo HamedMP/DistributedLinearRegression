@@ -33,7 +33,7 @@ object Main {
     val tokensArray = regexTokenizer.transform(rawDF)
 
     tokensArray.select("prediction").take(5).foreach(println)
-
+    
     //Step3: transform array of tokens to a vector of tokens (use our ArrayToVector)
     val arr2Vect = new Array2Vector()
       .setInputCol("prediction")
@@ -65,10 +65,15 @@ object Main {
     val fSlicer = new VectorSlicer().setIndices(Array(1, 2, 3))
       .setInputCol("arr2VectPrediction")
       .setOutputCol("features")
-//      .transform(lShifter)
-
-//    fSlicer.select("features").show(false)
-
+    
+//  using all features for the cluster  
+//    val numFeatures = tokensArray.select("predictions").take(1).size
+//    val numFeatures = tokensArray.select("predictions").take(1).head.size
+//    val fIndicesArrays = (1 to numFeatures).toArray
+//    val fsclier = new VectorSlicer().setIndices(fIndicesArrays).setInputCol("arr2VectPrediction")
+//      .setOutputCol("features")
+// 
+ 
     //Step8: put everything together in a pipeline
     val pipeline = new Pipeline().setStages(Array(regexTokenizer, arr2Vect, lSlicer, v2d, lShifter, fSlicer))
 
@@ -79,7 +84,8 @@ object Main {
     val transformed = pipelineModel.transform(rawDF)
 
     //Step11: drop all columns from the dataframe other than label and features
-    val finalDF = transformed.select("label", "features")
+    val finalDF = transformed.drop("rawDF","prediction","arr2VectPrediction","yearArray","year")
+//    val finalDF = transformed.select("label", "features")
 
     finalDF.show()
 

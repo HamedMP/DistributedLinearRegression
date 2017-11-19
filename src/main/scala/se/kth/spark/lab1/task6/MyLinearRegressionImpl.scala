@@ -1,25 +1,16 @@
 package se.kth.spark.lab1.task6
 
-import breeze.linalg
 import org.apache.spark.ml.linalg.Vector
-import org.apache.spark.ml.PredictorParams
 import org.apache.spark.ml.param.ParamMap
 import org.apache.spark.ml.util._
 import org.apache.spark.rdd.RDD
 import org.apache.spark.sql.Dataset
-import org.apache.spark.sql.functions._
-import org.apache.spark.hack._
+import org.apache.spark.sql.functions.col
 import org.apache.spark.sql.Row
 
 import scala.math._
-import org.apache.spark.ml.linalg.Vectors
-import org.apache.spark.ml.linalg.Matrices
-import org.apache.spark.mllib.evaluation.RegressionMetrics
-import breeze.linalg.DenseVector
-import breeze.linalg._
-import breeze.numerics._
 
-case class Instance(label: Double, features: DenseVector[Double])
+case class Instance(label: Double, features: Vector)
 
 object Helper {
   def rmse(labelsAndPreds: RDD[(Double, Double)]): Double = {
@@ -30,11 +21,11 @@ object Helper {
     sqrt(normalizedSum)
   }
 
-  def predictOne(weights: DenseVector[Double], features: DenseVector[Double]): Double = {
-    VectorHelper.dot(weights.t, features)
+  def predictOne(weights: Vector, features: Vector): Double = {
+    VectorHelper.dot(weights, features)
   }
 
-  def predict(weights: DenseVector[Double], data: RDD[Instance]): RDD[(Double, Double)] = {
+  def predict(weights: Vector, data: RDD[Instance]): RDD[(Double, Double)] = {
     data.map(i => (i.label, predictOne(weights, i.features)))
   }
 }
@@ -46,22 +37,23 @@ class MyLinearRegressionImpl(override val uid: String)
 
   override def copy(extra: ParamMap): MyLinearRegressionImpl = defaultCopy(extra)
 
-  def gradientSummand(weights: DenseVector[Double], lp: Instance): DenseVector[Double] = {
-    VectorHelper.dot(lp.features, VectorHelper.dot(weights.t, lp.features) - lp.label) // TODO
+  def gradientSummand(weights: Vector, lp: Instance): Vector = {
+    VectorHelper.dot(lp.features,
+      VectorHelper.dot(weights, lp.features) - lp.label) // TODO
   }
 
-  def gradient(d: RDD[Instance], weights: DenseVector[Double]): DenseVector[Double] = {
+  def gradient(d: RDD[Instance], weights: Vector): Vector = {
     d.map(x => gradientSummand(weights, x))
       .reduce((x, y) => VectorHelper.sum(x, y))
   }
 
   def linregGradientDescent(trainData: RDD[Instance], numIters: Int):
-  (DenseVector[Double], Array[Double]) = {
+  (Vector, Array[Double]) = {
 
     val n = trainData.count()
     val d = trainData.take(1)(0).features.size
     var weights = VectorHelper.fill(d, 0)
-    val alpha = 1.0
+    val alpha = 0.1
     val errorTrain = Array.fill[Double](numIters)(0.0)
 
     for (i <- 0 until numIters) {
@@ -84,11 +76,11 @@ class MyLinearRegressionImpl(override val uid: String)
   def train(dataset: Dataset[_]): MyLinearModelImpl = {
     println("Training")
 
-    val numIters = 100
+    val numIters = 10
 
     val instances: RDD[Instance] = dataset.select(
       col($(labelCol)), col($(featuresCol))).rdd.map {
-        case Row(label: Double, features: DenseVector[Double]) =>
+        case Row(label: Double, features: Vector) =>
           Instance(label, features)
       }
 
@@ -97,12 +89,12 @@ class MyLinearRegressionImpl(override val uid: String)
   }
 }
 
-class MyLinearModelImpl(override val uid: String, val weights: DenseVector[Double], val trainingError: Array[Double])
-    extends MyLinearModel[DenseVector[Double], MyLinearModelImpl] {
+class MyLinearModelImpl(override val uid: String, val weights: Vector, val trainingError: Array[Double])
+    extends MyLinearModel[Vector, MyLinearModelImpl] {
 
   override def copy(extra: ParamMap): MyLinearModelImpl = defaultCopy(extra)
 
-  def predict(features: DenseVector[Double]): Double = {
+  def predict(features: Vector): Double = {
     println("Predicting")
     val prediction = Helper.predictOne(weights, features)
     prediction

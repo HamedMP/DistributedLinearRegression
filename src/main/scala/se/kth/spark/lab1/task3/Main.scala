@@ -1,7 +1,7 @@
 package se.kth.spark.lab1.task3
 
 import org.apache.spark._
-import org.apache.spark.sql.{DataFrame, SQLContext}
+import org.apache.spark.sql.{DataFrame, SQLContext, SparkSession}
 import org.apache.spark.ml.feature.{HashingTF, RegexTokenizer, Tokenizer, VectorSlicer}
 import org.apache.spark.ml.tuning.CrossValidatorModel
 import org.apache.spark.ml.regression.LinearRegressionModel
@@ -12,15 +12,12 @@ import se.kth.spark.lab1.{Array2Vector, DoubleUDF, Vector2DoubleUDF}
 
 object Main {
   def main(args: Array[String]) {
-    val conf = new SparkConf().setAppName("lab1").setMaster("local")
-    val sc = new SparkContext(conf)
-    val sqlContext = new SQLContext(sc)
-    
-    import sqlContext.implicits._
-    import sqlContext._
+
+    val sc = SparkSession.builder.appName("lab1").master("local").getOrCreate()
+    import sc.implicits._
     
     val filePath = "src/main/resources/millionsong.txt"
-    val rdd = sc.textFile(filePath)
+    val rdd = sc.sparkContext.textFile(filePath)
     val obsDF: DataFrame = rdd.toDF("rawDF").cache()
     val splits = obsDF.randomSplit(Array(0.8, 0.2))
     val train = splits(0).cache()

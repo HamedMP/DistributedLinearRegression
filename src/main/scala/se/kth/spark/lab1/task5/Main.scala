@@ -1,7 +1,7 @@
 package se.kth.spark.lab1.task5
 
 import org.apache.spark._
-import org.apache.spark.sql.{ SQLContext, DataFrame }
+import org.apache.spark.sql.{DataFrame, SQLContext, SparkSession}
 import org.apache.spark.ml.tuning.CrossValidatorModel
 import org.apache.spark.ml.regression.LinearRegressionModel
 import org.apache.spark.ml.feature.{HashingTF, RegexTokenizer, Tokenizer, VectorSlicer}
@@ -15,34 +15,31 @@ import org.apache.spark.ml.feature.PolynomialExpansion
 
 object Main {
   def main(args: Array[String]) {
-    val conf = new SparkConf().setAppName("lab1").setMaster("local")
-    val sc = new SparkContext(conf)
-    val sqlContext = new SQLContext(sc)
 
-    import sqlContext.implicits._
-    import sqlContext._
+    val sc = SparkSession.builder.appName("lab1").master("local").getOrCreate()
+    import sc.implicits._
 
     val filePath = "src/main/resources/millionsong.txt"
-    val rdd = sc.textFile(filePath)
+    val rdd = sc.sparkContext.textFile(filePath)
 
     val obsDF: DataFrame = rdd.toDF("rawDF").cache()
     val splits = obsDF.randomSplit(Array(0.8, 0.2))
     val train = splits(0).cache()
     val test = splits(1).cache()
-    
+
     val regexTokenizer = new RegexTokenizer()
       .setInputCol("rawDF")
       .setOutputCol("data")
       .setPattern(",")
-      
+
     val tokensArray = regexTokenizer.transform(train)
-    
+
     val arr2Vect = new Array2Vector()
       .setInputCol("data")
       .setOutputCol("arr2VectPrediction")
-     
+
     val arr2VectOut = arr2Vect.transform(tokensArray)
-    
+
     val lSlicer = new VectorSlicer().setInputCol("arr2VectPrediction").setOutputCol("yearArray")
     lSlicer.setIndices(Array(0))
     val output = lSlicer.transform(arr2VectOut)
@@ -57,13 +54,13 @@ object Main {
     val lShifter = new DoubleUDF(year => year - minYear)
       .setInputCol("year")
       .setOutputCol("label")
-    
+
     val fSlicer = new VectorSlicer().setIndices(Array(1, 2, 3))
       .setInputCol("arr2VectPrediction")
       .setOutputCol("features")
-    
+
     val expfeatures = new PolynomialExpansion().setInputCol("features").setOutputCol("expandedfeatures")
-    
+
     val learningRate = 0.1
     val learningAlg = new LinearRegression()
     .setFeaturesCol("features")

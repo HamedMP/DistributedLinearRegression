@@ -7,20 +7,16 @@ import org.apache.spark.ml.feature.VectorSlicer
 import org.apache.spark.ml.Pipeline
 import org.apache.spark.SparkConf
 import org.apache.spark.SparkContext
-import org.apache.spark.sql.SQLContext
+import org.apache.spark.sql.{SQLContext, SparkSession}
 import org.apache.spark.sql.functions.{col, min}
 
 object Main {
   def main(args: Array[String]) {
-    val conf = new SparkConf().setAppName("lab1").setMaster("local")
-    val sc = new SparkContext(conf)
-    val sqlContext = new SQLContext(sc)
-
-    import sqlContext.implicits._
-    import sqlContext._
+    val sc = SparkSession.builder.appName("lab1").master("local").getOrCreate()
+    import sc.implicits._
 
     val filePath = "src/main/resources/millionsong.txt"
-    val rdd = sc.textFile(filePath)
+    val rdd = sc.sparkContext.textFile(filePath)
     val rawDF = rdd.toDF("rawDF").cache()    
     
     //Step1: tokenize each row
